@@ -12,7 +12,7 @@ class Runner
   def initialize w = 'commit!!!'
     @word = Word.new(w)
     @filer = Filer.new()
-    @date = Calendar.new()
+    @date = Calendar.new(@word.buffer)
     @committer = Committer.new()
   end
 
