@@ -10,3 +10,7 @@ branches:
 
 script:
   - make
+
+addons:
+  code_climate:
+    repo_token: 50f934fec0a9cebebaad8a355e96cdadeb631c9a30baba112668439b4407a6c4
