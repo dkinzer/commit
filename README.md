@@ -1,4 +1,4 @@
-Commit [![Build Status](https://travis-ci.org/dkinzer/commit.png?branch=master)](https://travis-ci.org/dkinzer/commit)
+Commit [![Build Status](https://travis-ci.org/dkinzer/commit.png?branch=trunk)](https://travis-ci.org/dkinzer/commit)
 ======
 
 ![Commit Image](resource/commit.bmp)
