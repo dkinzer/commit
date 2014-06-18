@@ -1,4 +1,4 @@
-Commit [![Build Status](https://travis-ci.org/dkinzer/commit.png?branch=trunk)](https://travis-ci.org/dkinzer/commit)
+Commit 
 ======
 
 ![Commit Image](resource/commit.bmp)
@@ -14,3 +14,9 @@ Commit to change not stasis.
 ...
 
 Commit to what's important.
+
+##Quality Control##
+
+[![Build Status](https://travis-ci.org/dkinzer/commit.png?branch=trunk)](https://travis-ci.org/dkinzer/commit)
+
+[![Code Climate](https://codeclimate.com/github/dkinzer/commit.png)](https://codeclimate.com/github/dkinzer/commit)
