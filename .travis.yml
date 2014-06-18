@@ -6,7 +6,7 @@ rvm:
 
 branches:
   only:
-    - trunk
+    - master
 
 script:
   - make
