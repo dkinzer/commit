@@ -52,5 +52,4 @@ class Word
   def to_s
     @string
   end
-
 end

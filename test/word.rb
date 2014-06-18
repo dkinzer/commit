@@ -37,5 +37,4 @@ class TestWord < MiniTest::Unit::TestCase
     actual = @word.to_s
     assert_equal expected, actual
   end
-
 end

@@ -29,5 +29,4 @@ class Runner
       @date.next
     }
   end
-
 end

@@ -25,5 +25,4 @@ class Calendar
   def week number
     @current = @start + (7 * number)
   end
-
 end

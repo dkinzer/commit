@@ -43,6 +43,5 @@ class TestCalendar < MiniTest::Unit::TestCase
     actual = @date.week(3).wday
     assert_equal expected, actual
   end
-
 end
 

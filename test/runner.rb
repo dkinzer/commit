@@ -2,7 +2,6 @@ require 'minitest/autorun'
 require './lib/runner'
 
 class TestRunner < MiniTest::Unit::TestCase
-
   def setup
     @runner = Runner.new
   end
@@ -30,5 +29,4 @@ class TestRunner < MiniTest::Unit::TestCase
     actual = @runner.date.class
     assert_equal expected, actual
   end
-
 end

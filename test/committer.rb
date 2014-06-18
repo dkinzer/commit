@@ -45,6 +45,5 @@ class TestCommitter < MiniTest::Unit::TestCase
     expected = "git commit --date=#{date.iso8601} -m 'And now for something completely different.'"
     assert_equal actual, expected
   end
-
 end
 
