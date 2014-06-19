@@ -1,6 +1,16 @@
 require 'minitest/autorun'
 require './lib/runner'
 
+module BacktickTest
+  def `(cmd)
+    "#{cmd}"
+  end
+end
+
+class Runner
+  include BacktickTest
+end
+
 class TestRunner < MiniTest::Unit::TestCase
   def setup
     @runner = Runner.new
@@ -29,4 +39,11 @@ class TestRunner < MiniTest::Unit::TestCase
     actual = @runner.date.class
     assert_equal expected, actual
   end
+
+  def test_run
+    expected = @runner.word.each(){|x|}
+    actual = @runner.run()
+    assert_equal expected, actual
+  end
+
 end
