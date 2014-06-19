@@ -16,6 +16,10 @@ class TestRunner < MiniTest::Unit::TestCase
     @runner = Runner.new
   end
 
+  def teardown
+    `git checkout -- mock.txt`
+  end
+
   def test_has_word
     expected = Word.new("commit").class
     actual = @runner.word.class
@@ -45,5 +49,4 @@ class TestRunner < MiniTest::Unit::TestCase
     actual = @runner.run()
     assert_equal expected, actual
   end
-
 end
