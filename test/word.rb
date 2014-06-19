@@ -3,7 +3,7 @@ require './lib/word'
 
 class TestWord < MiniTest::Unit::TestCase
   def setup
-    @word = Word.new("commit!")
+    @word = Word.new(" commit! ")
   end
 
   def test_default_word
@@ -33,7 +33,7 @@ class TestWord < MiniTest::Unit::TestCase
   end
 
   def test_to_s
-    expected = "commit!"
+    expected = " commit! "
     actual = @word.to_s
     assert_equal expected, actual
   end
