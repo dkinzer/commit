@@ -20,3 +20,5 @@ Commit to what's important.
 [![Build Status](https://travis-ci.org/dkinzer/commit.png?branch=trunk)](https://travis-ci.org/dkinzer/commit)
 
 [![Code Climate](https://codeclimate.com/github/dkinzer/commit.png)](https://codeclimate.com/github/dkinzer/commit)
+
+[![Code Climate](https://codeclimate.com/github/dkinzer/coverage.png)](https://codeclimate.com/github/dkinzer/commit)
