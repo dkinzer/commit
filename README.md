@@ -15,7 +15,10 @@ Commit to change not stasis.
 
 Commit to what's important.
 
+
 ##Quality Control##
+
+[![Dependency Status](https://gemnasium.com/dkinzer/commit.svg)](https://gemnasium.com/dkinzer/commit)
 
 [![Build Status](https://travis-ci.org/dkinzer/commit.png?branch=master)](https://travis-ci.org/dkinzer/commit)
 
