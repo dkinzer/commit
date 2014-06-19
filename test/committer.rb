@@ -2,10 +2,14 @@ require 'minitest/autorun'
 require 'date'
 require './lib/committer'
 
-module Kernel
+module BacktickTest
   def `(cmd)
     "#{cmd}"
   end
+end
+
+class Committer
+  include BacktickTest
 end
 
 class TestCommitter < MiniTest::Unit::TestCase
