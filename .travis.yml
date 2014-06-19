@@ -9,7 +9,7 @@ branches:
     - master
 
 script:
-  - make
+  - make test-report
 
 addons:
   code_climate:

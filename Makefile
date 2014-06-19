@@ -3,6 +3,9 @@
 default: test
 
 test:
+	ruby -e 'ARGV.each {|file| require file}' ./test/*.rb
+
+test-report:
 	ruby -e 'require "codeclimate-test-reporter"; CodeClimate::TestReporter.start; ARGV.each {|file| require file}' ./test/*.rb
 
 run: reset
