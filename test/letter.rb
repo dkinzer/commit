@@ -7,42 +7,37 @@ class TestLetter < MiniTest::Unit::TestCase
   end
 
   def test_c
-    assert_instance_of(Array, @letter.c)
-    assert_instance_of(Array, @letter.c[0])
-    assert_equal(@letter.c, @letter.C)
+    assert_instance_of(Array, @letter.send(:c))
+    assert_instance_of(Array, @letter.send(:c)[0])
   end
 
   def test_o
-    assert_instance_of(Array, @letter.o)
-    assert_instance_of(Array, @letter.o[0])
-    assert_equal(@letter.o, @letter.O)
+    assert_instance_of(Array, @letter.send("o"))
+    assert_instance_of(Array, @letter.send(:o)[0])
   end
 
   def test_m
-    assert_instance_of(Array, @letter.m)
-    assert_instance_of(Array, @letter.m[0])
-    assert_equal(@letter.m, @letter.M)
+    assert_instance_of(Array, @letter.send(:m))
+    assert_instance_of(Array, @letter.send(:m)[0])
   end
 
   def test_i
-    assert_instance_of(Array, @letter.i)
-    assert_instance_of(Array, @letter.i[0])
-    assert_equal(@letter.i, @letter.I)
+    assert_instance_of(Array, @letter.send(:i))
+    assert_instance_of(Array, @letter.send(:i)[0])
   end
 
   def test_t
-    assert_instance_of(Array, @letter.t)
-    assert_instance_of(Array, @letter.t[0])
-    assert_equal(@letter.t, @letter.T)
+    assert_instance_of(Array, @letter.send(:t))
+    assert_instance_of(Array, @letter.send(:t)[0])
   end
 
   def test_space
-    assert_instance_of(Array, @letter.space)
-    assert_instance_of(Array, @letter.space[0])
+    assert_instance_of(Array, @letter.send(:space))
+    assert_instance_of(Array, @letter.send(:space)[0])
   end
   
   def test_exclamation
-    assert_instance_of(Array, @letter.exclamation)
-    assert_instance_of(Array, @letter.exclamation[0])
+    assert_instance_of(Array, @letter.send(:exclamation))
+    assert_instance_of(Array, @letter.send(:exclamation)[0])
   end
 end

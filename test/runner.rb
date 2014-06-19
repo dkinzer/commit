@@ -6,8 +6,8 @@ class TestRunner < MiniTest::Unit::TestCase
     @runner = Runner.new
   end
 
-  def test_has_wod
-    expected = Word.new("Commit").class
+  def test_has_word
+    expected = Word.new("commit").class
     actual = @runner.word.class
     assert_equal expected, actual
   end
