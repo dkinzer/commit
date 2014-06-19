@@ -11,13 +11,11 @@ class TestWord < MiniTest::Unit::TestCase
   end
 
   def test_size
-    assert_equal 32, @word.size
+    assert_equal 36, @word.size
   end
 
   def test_buffer
-    expected = 10
-    actual = @word.buffer
-    assert_equal expected, actual
+    assert_equal 8, @word.buffer
   end
 
   def test_each
@@ -33,8 +31,6 @@ class TestWord < MiniTest::Unit::TestCase
   end
 
   def test_to_s
-    expected = " commit! "
-    actual = @word.to_s
-    assert_equal expected, actual
+    assert_equal " commit! ", @word.to_s
   end
 end
