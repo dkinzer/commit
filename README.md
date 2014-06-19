@@ -21,4 +21,4 @@ Commit to what's important.
 
 [![Code Climate](https://codeclimate.com/github/dkinzer/commit.png)](https://codeclimate.com/github/dkinzer/commit)
 
-[![Code Climate](https://codeclimate.com/github/dkinzer/coverage.png)](https://codeclimate.com/github/dkinzer/commit)
+[![Code Climate](https://codeclimate.com/github/dkinzer/commit/coverage.png)](https://codeclimate.com/github/dkinzer/commit)
