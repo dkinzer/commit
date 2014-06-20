@@ -5,17 +5,8 @@ class Calendar
   attr_reader :current
 
   def initialize start = DateTime.now - 365
-    if start.class == Fixnum
-      weeks = start
-      start = DateTime.now - 365
-    else
-      weeks = 0
-    end
-
-    first_day = start - start.wday
-    @start= first_day
-    @current = @start
-    week weeks.to_f
+    @start = first_day start
+    adjust_current start
   end
 
   def next
@@ -24,5 +15,22 @@ class Calendar
 
   def week number
     @current = @start + (7 * number)
+  end
+
+  private
+
+  def adjust_current start
+    if start.class == Fixnum
+      week start.to_f
+    else
+      week 0
+    end
+  end
+
+  def first_day  start
+    if start.class == Fixnum
+      start = DateTime.now - 365
+    end
+    start - start.wday
   end
 end
