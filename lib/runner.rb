@@ -20,13 +20,19 @@ class Runner
     @committer.reset
     @word.each{|commit|
       if commit == 1
-        20.times {
-          @filer.add_line "A change."
-          @committer.add
-          @committer.commit @date.current
-        }
+        commit_it
       end
       @date.next
+    }
+  end
+
+  private
+
+  def commit_it
+    20.times {
+      @filer.add_line "A change."
+      @committer.add
+      @committer.commit @date.current
     }
   end
 end
